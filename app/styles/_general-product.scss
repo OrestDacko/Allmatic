@@ -1,0 +1,124 @@
+.block_products_items {
+  margin-bottom: 124px;
+}
+
+.box_product_general {
+  background: #f3f3f3;
+  width: 100%;
+  min-height: 550px;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    padding: 30px 30px 0px 30px;
+    display: block;
+
+    .image {
+      text-align: center;
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .descr_title {
+      color: #000000;
+      font-size: 24px;
+      margin-top: 0px;
+      position: relative;
+      padding-top: 19px;
+      margin-bottom: 24px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 54px;
+        height: 4px;
+        background: #ef8900;
+      }
+    }
+    .text_descr_product_gn {
+      color: #757575;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+    .price {
+      font-size: 24px;
+      color: #000000;
+    }
+  }
+
+  .cart-block {
+    position: absolute;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 0;
+    background: #000;
+    color: #757575;
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .add_cart {
+      width: 81%;
+      font-size: 18px;
+      text-transform: uppercase;
+      border-right: 1px solid #2e2e2e;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-left: 30px;
+      line-height: 1;
+    }
+    .icon_cart {
+      width: 19%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.block_product_name {
+  color: #000000;
+  font-size: 34px;
+  max-height: 68px;
+  overflow: hidden;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 112px;
+  margin-bottom: 17px;
+}
+.bottom_name_item {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 45px;
+  display: block;
+}
+.sale-new-block {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1px;
+
+  .element_top {
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    line-height: 1;
+  }
+  .sale_block {
+    background: #ef3e00;
+    margin-right: 1px;
+  }
+  .new_product_name {
+    background: #6dab1b;
+  }
+}

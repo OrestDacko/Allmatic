@@ -1,0 +1,121 @@
+.category-menu {
+  //   padding: 0 21px 0 29px;
+  margin-bottom: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.category-menu-nav {
+  list-style-type: none;
+  padding: 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.category-menu-nav-li {
+  margin: 0;
+  padding: 16px 0;
+  border-bottom: 1px solid #dcdcdc;
+  &:hover {
+    cursor: pointer;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.category-menu-nav-label {
+  padding: 0 20px;
+  color: 757575;
+  color: #757575;
+  align-items: normal;
+  // display: flex;
+
+  display: block;
+  align-items: center;
+  margin-bottom: 0px;
+  &:hover {
+    color: #000000;
+  }
+
+  .top_name {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+.category-menu-nav-name {
+  color: #757575;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-weight: 300;
+  border: none;
+  display: block;
+  &:hover {
+    color: #000000;
+  }
+}
+.icon {
+  // background: url(../images/add.svg) center no-repeat;
+  width: 13px;
+  height: 13px;
+  display: block;
+  transition: all 0.3s;
+  position: relative;
+  float: right;
+  &:after,
+  &:before {
+    content: "";
+    left: 0;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1.8px solid #757575;
+    margin-top: 2px;
+  }
+  &:after {
+    top: 49%;
+  }
+  &:before {
+    top: 50%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+.active {
+  .icon {
+    &:before {
+      opacity: 0;
+    }
+  }
+}
+.category-menu-nav-tree {
+  list-style-type: none;
+  padding-left: 0;
+  display: none;
+  padding-top: 36px;
+
+  .category-menu-nav-li {
+    border: none;
+    padding: 0;
+    margin-bottom: 24px;
+    /*  label {
+      display: block !important;
+    } */
+  }
+}
+.category-menu-nav-a {
+  color: #757575;
+  font-weight: normal;
+  display: block;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 0 20px;
+  &:hover {
+    color: #757575;
+    text-decoration: none;
+  }
+}
