@@ -14,7 +14,7 @@
 }
 .category-menu-nav-li {
   margin: 0;
-  padding: 16px 0;
+  // padding: 16px 0;
   border-bottom: 1px solid #dcdcdc;
   &:hover {
     cursor: pointer;
@@ -24,7 +24,7 @@
   }
 }
 .category-menu-nav-label {
-  padding: 0 20px;
+  padding: 16px 20px;
   color: 757575;
   color: #757575;
   align-items: normal;
@@ -41,6 +41,10 @@
     font-size: 16px;
     text-transform: uppercase;
   }
+}
+.sub_menu_nav {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .category-menu-nav-name {
   color: #757575;

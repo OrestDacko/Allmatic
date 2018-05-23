@@ -3,6 +3,10 @@
   overflow: hidden;
   margin-bottom: 45px;
 
+  .active {
+    background: #bfbfbf;
+  }
+
   .item {
     // position: relative;
     img {
@@ -94,5 +98,11 @@
     }
   }
   .main-slider {
+  }
+  #custom_circle {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    border: 1px solid #bfbfbf;
   }
 }

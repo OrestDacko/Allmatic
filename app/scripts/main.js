@@ -1,11 +1,18 @@
 $(document).ready(function() {
-  console.log('ready!');
+  console.log("ready!");
 
-  $('.category-menu-nav-label').click(function() {
+  $(".category-menu-nav-label").click(function() {
     $(this)
-      .toggleClass('active')
+      .toggleClass("active")
       .parent()
-      .children('.category-menu-nav-tree')
+      .children(".category-menu-nav-tree")
       .toggle(200);
+  });
+
+  $(".spoiler-trigger").click(function() {
+    $(this)
+      .parent()
+      .next()
+      .collapse("toggle");
   });
 });
