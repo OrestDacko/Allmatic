@@ -1,0 +1,30 @@
+.pull-right {
+  .pagination {
+    margin: 0px;
+    border-radius: 0px;
+    border: 1px solid #757575;
+    a {
+      border: none;
+      color: #000;
+    }
+  }
+}
+
+.arrow_pagination {
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  padding: 5px 5px !important;
+  line-height: 0 !important;
+  border-right: 1px solid #757575;
+  i {
+    font-size: 22px;
+  }
+}
+#right {
+  border-right: 1px solid #757575;
+}
+#left {
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-left: 1px solid #757575;
+}
