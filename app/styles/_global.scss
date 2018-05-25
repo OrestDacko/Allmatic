@@ -1,6 +1,11 @@
 body {
   position: static;
 }
-button {
+button,
+input,
+textarea,
+ul,
+li,
+a {
   outline: none;
 }
