@@ -1,30 +1,59 @@
-.pull-right {
-  .pagination {
-    margin: 0px;
-    border-radius: 0px;
-    border: 1px solid #757575;
-    a {
-      border: none;
-      color: #000;
+.al-pagination {
+  margin: 0px;
+  border-radius: 0px;
+  border: 1px solid #757575;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  display: inline-block;
+  &__item {
+    color: #757575;
+    font-size: 22px;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    &_active,
+    &:hover {
+      color: rgb(0, 0, 0);
+      background: #f3f3f3;
+    }
+    &_arrow {
+      &_left {
+        border-right: 1px solid #757575;
+      }
+      &_right {
+        border-left: 1px solid #757575;
+      }
     }
   }
-}
-
-.arrow_pagination {
-  border-bottom-left-radius: 0px !important;
-  border-top-left-radius: 0px !important;
-  padding: 5px 5px !important;
-  line-height: 0 !important;
-  border-right: 1px solid #757575;
-  i {
-    font-size: 22px;
+  &__a {
+    padding: 4px 7px;
+    min-width: 33px;
+    min-height: 33px;
+    font-size: 14px;
+    color: #757575;
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active,
+    .al-pagination__item_active &,
+    .al-pagination__item_arrow & {
+      color: #000;
+      text-decoration: none;
+    }
   }
-}
-#right {
-  border-right: 1px solid #757575;
-}
-#left {
-  border-bottom-right-radius: 0px !important;
-  border-top-right-radius: 0px !important;
-  border-left: 1px solid #757575;
+  &__i {
+    font-size: 14px;
+    line-height: 1;
+  }
 }
