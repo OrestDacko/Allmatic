@@ -13,7 +13,7 @@
 }
 .category-menu-nav-li {
   margin: 0;
-  padding: 16px 21px 16px 29px;
+  padding: 18px 21px 18px 29px;
   border-bottom: 1px solid #dcdcdc;
   &:hover {
     cursor: pointer;
@@ -54,6 +54,7 @@
   font-weight: 300;
   border: none;
   display: block;
+  font-size: 16px;
   &:hover {
     color: #000000;
   }
@@ -93,7 +94,7 @@
   list-style-type: none;
   padding-left: 0;
   display: none;
-  padding-top: 15px;
+  padding-top: 25px;
 
   .category-menu-nav-li {
     border: none;
@@ -107,9 +108,15 @@
   display: block;
   font-weight: 300;
   text-decoration: none;
-  padding: 0 20px;
+  // padding: 0 20px;
   &:hover {
     color: #757575;
     text-decoration: none;
+  }
+}
+.category-menu-nav-name {
+  .icon {
+    width: 10px;
+    height: 10px;
   }
 }

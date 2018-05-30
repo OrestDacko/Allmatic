@@ -10,7 +10,9 @@
     text-decoration: none;
   }
 }
-
+.banner-wrapper {
+  margin-bottom: 40px;
+}
 .bg-block-text {
   position: absolute;
   top: 0;
@@ -25,7 +27,7 @@
   margin-bottom: 25px;
   //max-height: 240px;
   overflow: hidden;
-  font-size: 80px;
+  font-size: 79px;
   font-family: "Roboto Condensed";
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -34,11 +36,12 @@
 }
 
 .sale-btn {
-  border: none;
   padding: 0;
   padding-left: 12px;
   padding-right: 12px;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 20px;
   text-transform: uppercase;
@@ -48,6 +51,12 @@
   font-weight: 400;
   background: #fff;
   color: #757575;
+  border: none;
+  // &:hover {
+  //   background: #fff;
+  //   color: #000;
+  //   border: none;
+  // }
   i {
     padding-left: 28px;
   }

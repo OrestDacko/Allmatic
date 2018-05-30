@@ -2,13 +2,13 @@
   background: url(../images/img_bt.png);
   height: 570px;
   margin-bottom: 70px;
-  background-size: cover;
-  //   background-repeat: no-repeat;
+  // background-size: calc(100% - 30px);
+  background-repeat: no-repeat;
   //   style="background: url(../images/img_bt.png) center no-repeat; background-size: cover;
 
   .wrapper_finder {
     margin-left: 60px;
-    width: 561px;
+    max-width: 561px;
     margin-right: 0;
     padding-top: 50px;
 

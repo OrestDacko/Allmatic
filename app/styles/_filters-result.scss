@@ -1,0 +1,87 @@
+.filters-result {
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &-item {
+    padding: 0 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 35px;
+  }
+  &-name {
+    color: rgb(117, 117, 117);
+    text-transform: uppercase;
+    padding-right: 15px;
+  }
+  &-children {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &-child {
+    padding-right: 10px;
+    display: flex;
+  }
+  &-reset {
+    margin-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &-title {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &-cancel {
+    background: #757575;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+      background: darken(#757575, 10%);
+    }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      background: #262626;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+    .filters-result & {
+      margin-left: 10px;
+    }
+    .filters-result-reset & {
+      width: 35px;
+      height: 35px;
+      margin-left: 10px;
+      &:before,
+      &:after {
+        width: 15px;
+      }
+    }
+  }
+}

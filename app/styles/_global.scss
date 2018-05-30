@@ -1,5 +1,7 @@
 body {
   position: static;
+  max-width: 1920px; // max with 1920px by design
+  margin: 0 auto;
 }
 button,
 input,
@@ -8,4 +10,7 @@ ul,
 li,
 a {
   outline: none;
+}
+.font-size-0 {
+  font-size: 0;
 }

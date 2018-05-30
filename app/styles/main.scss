@@ -4,13 +4,16 @@
 
 // other
 @import "bootstrap-header-footer";
+@import "node_modules/select2/src/scss/core";
 
 //  global
 @import "global";
 @import "primary-grid";
+@import "form";
 
 // modules
 @import "header";
+@import "text_about_product";
 @import "bottom-news";
 @import "category-menu";
 @import "carousel-home";
@@ -23,4 +26,5 @@
 @import "allmatic-filter";
 @import "allmatic-titan";
 @import "pagination";
+@import "filters-result";
 @import "footer";

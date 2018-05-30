@@ -43,6 +43,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    i {
+      font-size: 20px;
+    }
     &:hover,
     &:focus,
     .al-pagination__item_active &,
