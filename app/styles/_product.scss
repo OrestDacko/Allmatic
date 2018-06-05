@@ -1,7 +1,7 @@
 .product-box {
   position: relative;
   max-height: 290px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 64px auto;
   overflow: hidden;
 }
 .product-box-figure {
@@ -23,6 +23,9 @@
   align-items: center;
 }
 .product-box-description {
+}
+.wrapper_top_product_sct {
+  margin-bottom: 67px;
 }
 .product-box-title {
   color: #262626;

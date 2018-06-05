@@ -143,3 +143,24 @@
   border: none;
   margin-right: 15px;
 }
+.filters-wrapper-side-right {
+  margin-left: 15px;
+}
+.filter-select-more-add {
+  background: #fff;
+  color: #262626;
+  font-weight: bold;
+  margin-right: 0px;
+}
+.filter-select_black {
+  background: transparent;
+  border: 1px solid #757575;
+  line-height: 33px;
+  color: #000000;
+  min-width: 226px;
+}
+.wrap_select_block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}

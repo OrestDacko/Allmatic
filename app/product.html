@@ -10,6 +10,7 @@
   <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/jquery.spzoom.css">
   <!-- endbuild -->
 
 </head>
@@ -839,292 +840,402 @@
         </div>
       </div>
       <div class="primary-grid-side primary-grid-side_right">
-
-        <!-- slider -->
-
-        <div class="allmatic-titan">
-          <img src="images/allmatic-titan.jpg" alt="image" class="allmatic-titan-image">
-          <a href="">
-            <button class="allmatic-titan-btn">Jetzt Entdecken
-              <i class="material-icons arrow_forward">
-                arrow_forward
-              </i>
-            </button>
-          </a>
-        </div>
-        <div class="allmatic-filter">
-          <form action="/search" method="get" id="filter">
-            <div class="filters-wrapper">
-              <div class="filters-wrapper-side filters-wrapper-side-left">
-                <div class="form-group">
-                  <div class="filter-name">filter:</div>
-                </div>
-                <div>
-                  <div class="form-group filter-select">
-                    <span class="chosen-item">Spannweite</span>
-                    <span class="material-icons">arrow_downward</span>
-                    <ul class="options">
-                      <li>
-                        <span class="option-group">
-                          <input id="qq" type="checkbox" name="lkj">
-                          <label for="qq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqq" type="checkbox" name="lkj">
-                          <label for="qqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqqq" type="checkbox" name="lkj">
-                          <label for="qqqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                    </ul>
-
-                  </div>
-                  <div class="form-group filter-select filter-select_secondary">
-                    <span class="chosen-item">Art des Werkstücks</span>
-                    <span class="material-icons">arrow_downward</span>
-                    <ul class="options">
-                      <li>
-                        <span class="option-group">
-                          <input id="qq" type="checkbox" name="lkj">
-                          <label for="qq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqq" type="checkbox" name="lkj">
-                          <label for="qqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqqq" type="checkbox" name="lkj">
-                          <label for="qqqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                    </ul>
-
-                  </div>
-                  <div class="form-group filter-select filter-select_secondary">
-                    <span class="chosen-item">Backenbreite</span>
-                    <span class="material-icons">arrow_downward</span>
-                    <ul class="options">
-                      <li>
-                        <span class="option-group">
-                          <input id="qq" type="checkbox" name="lkj">
-                          <label for="qq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqq" type="checkbox" name="lkj">
-                          <label for="qqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqqq" type="checkbox" name="lkj">
-                          <label for="qqqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                    </ul>
-
-                  </div>
-                  <div class="form-group filter-select filter-select_secondary">
-                    <span class="chosen-item">Befestigung</span>
-                    <span class="material-icons">arrow_downward</span>
-                    <ul class="options">
-                      <li>
-                        <span class="option-group">
-                          <input id="qq" type="checkbox" name="lkj">
-                          <label for="qq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqq" type="checkbox" name="lkj">
-                          <label for="qqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqqq" type="checkbox" name="lkj">
-                          <label for="qqqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                    </ul>
-
-                  </div>
-                  <div class="form-group filter-select">
-                    <span class="chosen-item">Preis</span>
-                    <span class="material-icons">arrow_downward</span>
-                    <ul class="options">
-                      <li>
-                        <span class="option-group">
-                          <input id="qq" type="checkbox" name="lkj">
-                          <label for="qq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqq" type="checkbox" name="lkj">
-                          <label for="qqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqqq" type="checkbox" name="lkj">
-                          <label for="qqqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                    </ul>
-
-                  </div>
-                  <div class="form-group filter-select filter-select-more-add">
-                    <span class="chosen-item">weitere Filter</span>
-                    <span class="material-icons">
-                      add
-                    </span>
-                    <ul class="options">
-                      <li>
-                        <span class="option-group">
-                          <input id="qq" type="checkbox" name="lkj">
-                          <label for="qq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqq" type="checkbox" name="lkj">
-                          <label for="qqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                      <li>
-                        <span class="option-group">
-                          <input id="qqqq" type="checkbox" name="lkj">
-                          <label for="qqqq"></label>
-                        </span>
-                        <span>some select</span>
-                      </li>
-                    </ul>
-                  </div>
+        <div class="product-details">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="product-details-galery">
+                <figure class="product-details-galery-item">
+                  <img src="http://via.placeholder.com/730x540" alt="">
+                </figure>
+                <figure class="product-details-galery-item">
+                  <img src="http://via.placeholder.com/730x540" alt="">
+                </figure>
+                <figure class="product-details-galery-item">
+                  <img src="http://via.placeholder.com/730x540" alt="">
+                </figure>
+                <div class="embed-responsive embed-responsive-16by9 form-group">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/OlMAsM1jzwE" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="filters-wrapper-side filters-wrapper-side-right">
-                <div class="form-group">
-                  <div class="filter-name">Kein passendes Produkt gefunden?</div>
+              <div class="product-details-accordion">
+                <div class="ac">
+                  <input class="ac-input" id="ac-1" name="ac-1" type="checkbox" />
+                  <label class="ac-label" for="ac-1">Technische Daten</label>
+                  <article class="ac-text">
+                    <div class="ac-sub">
+                      <input class="ac-input" id="ac-2" name="ac-2" type="checkbox" />
+                      <p>consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea consetetur sadipscing
+                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        At vero eos et accusam et justo duo dolores et ea </p>
+                      <p>consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea </p>
+                    </div>
+                    <div class="ac-sub">
+                      <input class="ac-input" id="ac-3" name="ac-3" type="checkbox" />
+                    </div>
+                  </article>
                 </div>
-                <div class="form-group">
-                  <button type="submit" class="btn_submit btn_filter_ctg">Produktfinder starten
+                <!--/ac-->
+                <div class="ac">
+                  <input class="ac-input" id="ac-4" name="ac-4" type="checkbox" />
+                  <label class="ac-label" for="ac-4">Technische Daten</label>
+                  <article class="ac-text">
+                    <div class="ac-sub">
+                      <input class="ac-input" id="ac-2" name="ac-2" type="checkbox" />
+                      <p>dsdasdas</p>
+                    </div>
+                    <div class="ac-sub">
+                      <input class="ac-input" id="ac-3" name="ac-3" type="checkbox" />
+                    </div>
+                  </article>
+                </div>
+                <!--/ac-->
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="product-details-info">
+                <div class="sale-new-block">
+                  <div class="sale_block element_top">sale</div>
+                  <div class="new_product_name element_top">new</div>
+                </div>
+                <div class="product_info_title">
+                  <h2>TeleCentric 70 K</h2>
+                  <span class="artcl_block">
+                    ArtNr.: 6921548000055
+                  </span>
+                </div>
+                <div class="name_list_info_text">
+
+                  Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur
+                </div>
+                <ul class="info_list">
+                  <li class="info_list_el">
+                    <span class="info_list_el_text">
+                      Optimal für den Einsatz auf 5-Achs-Bearbeitungszentren
+                    </span>
+                  </li>
+                  <li class="info_list_el">
+                    <span class="info_list_el_text">
+                      Konventionelles Spannen und Grippspannen möglich
+                    </span>
+                  </li>
+                  <li class="info_list_el">
+                    <span class="info_list_el_text">
+                      Teleskopspindel, Störkontur bleibt unverändert
+                    </span>
+                  </li>
+                  <li class="info_list_el">
+                    <span class="info_list_el_text">
+                      Zentrisch, einfache Programmierung ohne Nullpunktverschiebung
+                    </span>
+                  </li>
+                  <li class="info_list_el">
+                    <span class="info_list_el_text">
+                      Aufmaß des Materials wird symmetrisch verteilt
+                    </span>
+                  </li>
+                </ul>
+                <div class="delivery_block">
+                  <div class="rd_delivery">
                     <i class="material-icons">
-                      arrow_forward
+                      local_shipping
                     </i>
+                    Sofort lieferbar
+                  </div>
+                  <div class="weight_block">
+                    Gewicht: 10 kg
+                  </div>
+                </div>
+                <div class="price_block_detail">
+                  <span class="standart_price">
+                    2.980,00 €
+                    <!-- <sup class="symbol_str">&#9913;</sup> -->
+                  </span>
+                  <span class="sale_price">
+                    <strike>3.280,00 €</strike>
+                    <sup class="symbol_str">&#9913;</sup>
+                  </span>
+                </div>
+                <div class="add_count">
+                  <div id="wrap_block_count">
+                    <form action="">
+                      <div class="number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" class="number_change" />
+                        <span class="plus">+</span>
+                      </div>
+                    </form>
+                  </div>
+                  <button class="btn_cart_product">
+                    In den Warenkorb
+                    <div class="icon_cart_send">
+                      <i class="material-icons">
+                        shopping_cart
+                      </i>
+                    </div>
                   </button>
                 </div>
+                <div class="info_detail_gn">
+                  <div class="el_det_gn">
+                    <i class="material-icons">
+                      help_outline
+                    </i>
+                    <span>Fragen zum Produkt</span>
+                  </div>
+                  <div class="el_det_gn">
+                    <i class="material-icons like">
+                      thumb_up_alt
+                    </i>
+                    <span>Empfehlen</span>
+                  </div>
+                  <div class="el_det_gn">
+                    <i class="material-icons">
+                      playlist_add_check
+                    </i>
+                    <span>Auf die Merkliste (bitte einloggen)</span>
+                  </div>
+                </div>
+                <div class="additional_info">
+                  <div class="btn_inf">
+                    <button class="add_info_btn">
+                      Weitere informationen
+                      <i class="material-icons">
+                        arrow_downward
+                      </i>
+                    </button>
+                  </div>
+                  <div class="btn_inf">
+                    <button class="add_info_btn">
+                      Passendes Zubehör
+                      <i class="material-icons">
+                        arrow_downward
+                      </i>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="filters-result">
-              <div class="filters-result-list">
-                <div class="filters-result-item">
-                  <div class="filters-result-name">gesrtzte filter:</div>
-                  <div class="filters-result-children">
-                    <div class="filters-result-child">
-                      <span class="filters-result-title">spannweite: 30 -286</span>
-                      <span class="filters-result-cancel"></span>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card_el_wr">
+                <div class="row nopadding">
+                  <div class="col-lg-4">
+                    <div class="wrapper_card_add">
+                      <div class="image_crd">
+                        <img src="images/product_1.png" alt="">
+                      </div>
                     </div>
-                    <div class="filters-result-child">
-                      <span class="filters-result-title">preis: 450€ - 3250€</span>
-                      <span class="filters-result-cancel"></span>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="card_title_wrap">
+                      <h2 class="title_product">
+                        Ausricht- und Fixiersatz T-Nut 18/M16
+                      </h2>
+                      <span class="artcl_block">
+                        ArtNr.: 6921548000055
+                      </span>
+                      <span class="descr_prd_card">
+                        Für Palette und Maschinentisch
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="wrapper_add_count">
+                      <div class="price_crd">
+                        <span class="price_general">
+                          118,00 € *
+                        </span>
+                        <span class="weight">
+                          Gewicht: 0.3 kg
+                        </span>
+                      </div>
+                      <div class="number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" class="number_change" />
+                        <span class="plus">+</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!-- <div class="filters-result-item">
-                  <div class="filters-result-name">Preis filter</div>
-                  <div class="filters-result-children">
-                    <div class="filters-result-child">
-                      <span class="filters-result-title">spannweite: 30 -286</span>
-                      <span class="filters-result-cancel"></span>
-                    </div>
-                    <div class="filters-result-child">
-                      <span class="filters-result-title">preis: 450€ - 3250€</span>
-                      <span class="filters-result-cancel"></span>
+              </div>
+              <div class="card_el_wr">
+                <div class="row nopadding">
+                  <div class="col-lg-4">
+                    <div class="wrapper_card_add">
+                      <div class="image_crd">
+                        <img src="images/product_2.png" alt="">
+                      </div>
                     </div>
                   </div>
-                </div> -->
-              </div>
-              <div class="filters-result-reset">
-                <span class="filters-result-title">alle filter loschen</span>
-                <span class="filters-result-cancel"></span>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="container-right">
-          <!--  ALLMATIC HD -->
-          <div class="block_products_items">
-            <div class="row">
-              <div class="col-xs-6">
-                <h2 class="block_product_name name_category_title">
-                  ALLMATIC HD
-                </h2>
-              </div>
-              <div class="col-xs-6 text-right">
-
-                <div class="filter-select filter-select_black">
-                  <div class="wrap_select_block">
-                    <span class="chosen-item sort_block_name">Sortierung:</span>
-                    <span class="sort_name">niedrigster Preis </span>
-                    <span class="material-icons" id="sort_icon">arrow_downward</span>
+                  <div class="col-lg-5">
+                    <div class="card_title_wrap">
+                      <h2 class="title_product">
+                        Ausricht- und Fixiersatz T-Nut 18/M16
+                      </h2>
+                      <span class="artcl_block">
+                        ArtNr.: 6921548000055
+                      </span>
+                      <span class="descr_prd_card">
+                        Für Palette und Maschinentisch
+                      </span>
+                    </div>
                   </div>
-                  <ul class="options">
-                    <li>
-                      <span class="option-group">
-                        <input id="qq" type="checkbox" name="lkj">
-                        <label for="qq"></label>
-                      </span>
-                      <span></span>
-                    </li>
-                    <li>
-                      <span class="option-group">
-                        <input id="qqq" type="checkbox" name="lkj">
-                        <label for="qqq"></label>
-                      </span>
-                      <span></span>
-                    </li>
-                    <li>
-                      <span class="option-group">
-                        <input id="qqqq" type="checkbox" name="lkj">
-                        <label for="qqqq"></label>
-                      </span>
-                      <span></span>
-                    </li>
-                  </ul>
+                  <div class="col-lg-3">
+                    <div class="wrapper_add_count">
+                      <div class="price_crd">
+                        <span class="price_general">
+                          348,00 € *
+                        </span>
+                        <span class="weight">
+                          Gewicht: 0.3 kg
+                        </span>
+                      </div>
+                      <div class="number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" class="number_change" />
+                        <span class="plus">+</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="card_el_wr">
+                <div class="row nopadding">
+                  <div class="col-lg-4">
+                    <div class="wrapper_card_add">
+                      <div class="image_crd">
+                        <img src="images/product_1.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="card_title_wrap">
+                      <h2 class="title_product">
+                        Ausricht- und Fixiersatz T-Nut 18/M16
+                      </h2>
+                      <span class="artcl_block">
+                        ArtNr.: 6921548000055
+                      </span>
+                      <span class="descr_prd_card">
+                        Für Palette und Maschinentisch
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="wrapper_add_count">
+                      <div class="price_crd">
+                        <span class="price_general">
+                          118,00 € *
+                        </span>
+                        <span class="weight">
+                          Gewicht: 0.3 kg
+                        </span>
+                      </div>
+                      <div class="number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" class="number_change" />
+                        <span class="plus">+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card_el_wr">
+                <div class="row nopadding">
+                  <div class="col-lg-4">
+                    <div class="wrapper_card_add">
+                      <div class="image_crd">
+                        <img src="images/product_1.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="card_title_wrap">
+                      <h2 class="title_product">
+                        Ausricht- und Fixiersatz T-Nut 18/M16
+                      </h2>
+                      <span class="artcl_block">
+                        ArtNr.: 6921548000055
+                      </span>
+                      <span class="descr_prd_card">
+                        Für Palette und Maschinentisch
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="wrapper_add_count">
+                      <div class="price_crd">
+                        <span class="price_general">
+                          118,00 € *
+                        </span>
+                        <span class="weight">
+                          Gewicht: 0.3 kg
+                        </span>
+                      </div>
+                      <div class="number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" class="number_change" />
+                        <span class="plus">+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card_el_wr">
+                <div class="row nopadding">
+                  <div class="col-lg-4">
+                    <div class="wrapper_card_add">
+                      <div class="image_crd">
+                        <img src="images/product_1.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="card_title_wrap">
+                      <h2 class="title_product">
+                        Ausricht- und Fixiersatz T-Nut 18/M16
+                      </h2>
+                      <span class="artcl_block">
+                        ArtNr.: 6921548000055
+                      </span>
+                      <span class="descr_prd_card">
+                        Für Palette und Maschinentisch
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="wrapper_add_count">
+                      <div class="price_crd">
+                        <span class="price_general">
+                          118,00 € *
+                        </span>
+                        <span class="weight">
+                          Gewicht: 0.3 kg
+                        </span>
+                      </div>
+                      <div class="number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" class="number_change" />
+                        <span class="plus">+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
 
 
+
+
+
+
+
+              <div class="und_prodct_block">
                 <ul class="al-pagination">
                   <li class="al-pagination__item al-pagination__item_arrow al-pagination__item_arrow_left">
                     <a href="#" class="al-pagination__a">
@@ -1146,551 +1257,39 @@
                     </a>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="detail_hover_product">
-                      <div class="hover_block_text">
-                        Jetzt für unseren Newsletter Anmelden und bei der nächsten Bestellung Rabatt erhalten!
-                      </div>
-                      <div class="exl_hover_product">
-                        <span class="name_ex">Exklusiv für Abonnenten:</span>
-                        <div class="list_abonnenten">
-                          <span class="list_el">
-                            <i class="material-icons">
-                              done
-                            </i>
-                            10% Rabatt bei der nächsten Bestellung
-                          </span>
-                          <span class="list_el">
-                            <i class="material-icons">
-                              done
-                            </i>
-                            Experten News
-                          </span>
-                          <span class="list_el">
-                            <i class="material-icons">
-                              done
-                            </i>
-                            Besondere Angebote
-                          </span>
-                          <span class="list_el">
-                            <i class="material-icons">
-                              done
-                            </i>
-                            ... und vieles mehr!
-                          </span>
-                          <!-- <div class="btn_sale_bnr">
-                            <a href="">
-                              <button class="allmatic-titan-btn">Jetzt Entdecken
-                                <i class="material-icons arrow_forward">
-                                  arrow_forward
-                                </i>
-                              </button>
-                            </a>
-                            <a href="" class="btn_next_el">
-                              <button class="sale-btn">
-                                Mehr erfahren
-                                <i class="material-icons">
-                                  arrow_forward
-                                </i>
-                              </button>
-                            </a>
-                          </div> -->
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="sale-new-block">
-                  <div class="sale_block element_top">sale</div>
-                  <div class="new_product_name element_top">new</div>
-                </div>
-                <div class="box_product_general">
-                  <a href="#">
-                    <div class="image">
-                      <img src="images/product1.png" alt="">
-                    </div>
-                    <div class="description">
-                      <h2 class="descr_title">TeleCentric 70 K</h2>
-                      <p class="text_descr_product_gn">
-                        Unser neuer Schraubstock für 5-Achsen-Fräsen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-                      </p>
-                      <strong class="price">2.4324,00 &euro;
-                        <sup class="symbol_str">&#9913;</sup>
-                      </strong>
-                    </div>
-                  </a>
-                  <div class="cart-block">
-                    <div class="add_cart">
-                      In den Warenkorb
-                    </div>
-                    <div class="icon_cart">
-                      <i class="material-icons">
-                        shopping_cart
-                      </i>
-                    </div>
-                  </div>
+                <div class="show_all">
+                  Gesamtes Zubehör einblenden
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="pull-right">
-
-
-                  <ul class="al-pagination">
-                    <li class="al-pagination__item al-pagination__item_arrow al-pagination__item_arrow_left">
-                      <a href="#" class="al-pagination__a">
-                        <i class="material-icons">arrow_back</i>
-                      </a>
-                    </li>
-                    <li class="al-pagination__item al-pagination__item_active">
-                      <a href="#" class="al-pagination__a">1</a>
-                    </li>
-                    <li class="al-pagination__item">
-                      <a href="#" class="al-pagination__a">2</a>
-                    </li>
-                    <li class="al-pagination__item">
-                      <a href="#" class="al-pagination__a">3</a>
-                    </li>
-                    <li class="al-pagination__item al-pagination__item_arrow al-pagination__item_arrow_right">
-                      <a href="#" class="al-pagination__a">
-                        <i class="material-icons">arrow_forward</i>
-                      </a>
-                    </li>
-                  </ul>
-
-
-
-
+            <div class="col-sm-6">
+              <div class="assent_acces_wrap">
+                <div class="top_wrap_text">
+                  <span class="title_assent">
+                    Passendes Zubehör
+                  </span>
+                  <span class="hlp_text">
+                    Erweitern Sie dieses Produkt mit ALLMATIC-Zubehör.
+                  </span>
+                  <span class="hlp_text">
+                    Einfach bei den einzelnen Zubehör-Artikel die gewünschte Anzahl eingeben und in den Warenkorb legen.
+                  </span>
                 </div>
+                <button class="btn_cart_product">
+                  In den Warenkorb
+                  <div class="icon_cart_send">
+
+                    <i class="material-icons">
+                      shopping_cart
+                    </i>
+                  </div>
+                </button>
               </div>
             </div>
           </div>
-          <!-- end ALLMATIC HD -->
-          <div class="banner-wrapper">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="bg-block">
-                  <img src="images/banner.jpg" alt="">
-                  <div class="bg-block-text">
-                    <p class="bg-block-text-descr">
-                      SALE!!!
-                      <br> 5% auf alles
-                    </p>
-                    <div class="btn_sale_bnr">
-                      <a href="" class="btn_next_el">
-                        <button class="sale-btn">
-                          Mehr erfahren
-                          <i class="material-icons">
-                            arrow_forward
-                          </i>
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="bg-block">
-                  <img src="images/first.png" alt="">
-                  <div class="bg-block-text">
-                    <p class="bg-block-text-descr">
-                      Lorem ipsum dolor sit amet
-                    </p>
-                    <div class="btn_sale_bnr">
-                      <a href="" class="btn_next_el">
-                        <button class="sale-btn">
-                          Mehr erfahren
-                          <i class="material-icons">
-                            arrow_forward
-                          </i>
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="bg-block">
-                  <img src="images/second.png" alt="">
-                  <div class="bg-block-text">
-                    <p class="bg-block-text-descr">
-                      Lorem ipsum dolor sit amet
-                    </p>
-                    <div class="btn_sale_bnr">
-                      <a href="" class="btn_next_el">
-                        <button class="sale-btn">
-                          Mehr erfahren
-                          <i class="material-icons">
-                            arrow_forward
-                          </i>
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          <hr>
         </div>
+
       </div>
 
     </div>
@@ -1845,15 +1444,12 @@
       arrow_upward
     </i>
   </a>
-
-
   </div>
 
   <!-- build:js scripts/vendor.js -->
   <script src="scripts/jquery-3.2.1.min.js"></script>
+  <script src="scripts/jquery.spzoom.js"></script>
   <script src="scripts/bootstrap.min.js"></script>
-  <script src="scripts/select2.js"></script>
-  <script src="scripts/select2.multi-checkboxes.js"></script>
   <!-- endbuild -->
 
   <!-- build:js scripts/main.js -->

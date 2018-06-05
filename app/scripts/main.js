@@ -1,6 +1,5 @@
 $(document).ready(function() {
   console.log("ready!");
-
   $(".category-menu-nav-label").click(function() {
     $(this)
       .toggleClass("active")
@@ -39,14 +38,24 @@ $(document).ready(function() {
     console.log(method);
   });
 
-  // $(".select2-multiple").select2MultiCheckboxes({
-  //   width: "auto",
-  //   placeholder: "Your placeholder",
-  //   allowClear: false,
-  //   templateSelection: function(selected, total) {
-  //     return "Selected " + selected.length + " of " + total;
-  //   }
-  // });
+  $(".minus").click(function() {
+    var $input = $(this)
+      .parent()
+      .find("input");
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+  $(".plus").click(function() {
+    var $input = $(this)
+      .parent()
+      .find("input");
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
 });
 
 $("#q")
