@@ -10,8 +10,8 @@ $(document).ready(function() {
 
   $(".product-details-galery-item").imgZoom({
     origin: "data-origin",
-    boxWidth: 400,
-    boxHeight: 400,
+    boxWidth: 767,
+    boxHeight: 620,
     marginLeft: 30
   });
 
