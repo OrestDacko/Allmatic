@@ -8,26 +8,11 @@ $(document).ready(function() {
       .toggle(200);
   });
 
-  $(".jzoom").jzoom({
-    // width / height of the magnifying glass
-    width: 400,
-    height: 400,
-
-    // where to position the zoomed image
-    position: "right",
-
-    // x/y offset in pixels.
-    offsetX: 30,
-    offsetY: 0,
-
-    // opacity level
-    opacity: 1,
-
-    // background color
-    bgColor: "#fff",
-
-    // loading text
-    loading: "Loading..."
+  $(".product-details-galery-item").imgZoom({
+    origin: "data-origin",
+    boxWidth: 400,
+    boxHeight: 400,
+    marginLeft: 30
   });
 
   $(".spoiler-trigger").click(function() {
