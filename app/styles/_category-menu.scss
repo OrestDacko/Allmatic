@@ -32,13 +32,17 @@
   display: block;
   align-items: center;
   margin-bottom: 0px;
+
   &:hover {
-    color: #000000;
+    cursor: pointer;
   }
 
   .top_name {
     font-size: 16px;
     text-transform: uppercase;
+    &.active {
+      color: #000;
+    }
   }
 }
 .sub_menu_nav {
@@ -95,7 +99,6 @@
   padding-left: 0;
   display: none;
   padding-top: 25px;
-
   .category-menu-nav-li {
     border: none;
     padding: 0;

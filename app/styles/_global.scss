@@ -15,6 +15,19 @@ a {
   font-size: 0;
 }
 .nopadding {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
+}
+.nomargin {
+  margin-left: 0;
+  margin-right: 0;
+}
+.video_block {
+  margin-bottom: 35px;
+  height: 550px;
+}
+.active {
+  color: #000;
+}
+.category-menu-nav-tree .category-menu-nav-li:last-child {
+  margin-bottom: 0px;
 }
