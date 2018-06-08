@@ -368,7 +368,6 @@
                 </div>
             </div>
         </nav>
-
         <div class="primary-grid">
             <div class="primary-grid-side primary-grid-side_left">
                 <!-- menu -->
@@ -838,104 +837,257 @@
                     </ul>
                 </div>
             </div>
-            <div class="container">
+
+        </div>
+    </div>
+
+    <div class="bottom-news cart_block_wrapper_gn">
+        <div class="container">
+            <div class="wrapper_table">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="wrapper_tabs">
-                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                                <li>
-                                    <a href="#tab1" class="active">1. Warenkorbübersicht</a>
-                                </li>
-                                <li>
-                                    <a href="#tab2">2. Adressen wählen</a>
-                                </li>
-                                <li>
-                                    <a href="#tab3">3. Versand & Zahlungsart</a>
-                                </li>
-                                <li>
-                                    <a href="#tab4">4. Bestellen</a>
-                                </li>
-                            </ul>
-                            <section id="first-tab-group" class="tabgroup">
-                                <div id="tab1">
-                                    <table id="cart" class="table table-hover table-condensed">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>Artikel</th>
-                                                <th width="15%">Menge</th>
-                                                <th>Einzelpreis</th>
-                                                <th class="text-center">Gesamtbetrag</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="hidden-xs">
+                            <form action="
+                            ">
+                                <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                                    <li>
+                                        <a href="#tab1" class="active">1. Warenkorbübersicht</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab2">2. Adressen wählen</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab3">3. Versand & Zahlungsart</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab4">4. Bestellen</a>
+                                    </li>
+                                </ul>
+                                <section id="first-tab-group" class="tabgroup">
+                                    <div id="tab1">
+                                        <div class="card">
+                                            <div class="card__list-header">
+                                                <div class="card__list-header-call card__call-check"></div>
+                                                <div class="card__list-header-call card__call-img"></div>
+                                                <div class="card__list-header-call card__call-title names_top">Article</div>
+                                                <div class="card__list-header-call card__call-count names_top">Menge</div>
+                                                <div class="card__list-header-call card__call-price names_top">Einzelpreis</div>
+                                                <div class="card__list-header-call card__call-total names_top  total_property">Gesamtbetrag</div>
+                                                <div class="card__list-header-call card__call-btn"></div>
+                                            </div>
+                                            <div class="card__list">
+                                                <div class="card__item">
+                                                    <div class="card__item-call card__call-check">
+
+
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                    </div>
+                                                    <div class="card__item-call card__call-img">
                                                         <img src="images/card_el.png" class="img-responsive" />
                                                     </div>
-                                                </td>
-                                                <td data-th="Product" class="product_pro">
-                                                    <div class="row nopadding">
-
-                                                        <div class="col-sm-10">
-                                                            <h4 class="nomargin">TeleCentric 70 K
-                                                            </h4>
-                                                            <span class="artcl_block">
-                                                                ArtNr.: 6921548000055
-                                                            </span>
+                                                    <div class="card__item-call card__call-title">
+                                                        <h4 class="nomargin name_product_tbl">TeleCentric 70 K
+                                                        </h4>
+                                                        <span class="artcl_block">
+                                                            ArtNr.: 6921548000055
+                                                        </span>
+                                                    </div>
+                                                    <div class="card__item-call card__call-count">
+                                                        <div class="number">
+                                                            <span class="minus">-</span>
+                                                            <input type="text" value="1" class="number_change" />
+                                                            <span class="plus">+</span>
                                                         </div>
                                                     </div>
-                                                </td>
-                                                <td width="15%" data-th="Price">$1.99</td>
-                                                <td data-th="Quantity">
-                                                    <div class="number">
-                                                        <span class="minus">-</span>
-                                                        <input type="text" value="1" class="number_change" />
-                                                        <span class="plus">+</span>
+                                                    <div class="card__item-call card__call-price">
+                                                        <div class="wrap_block_pr">
+                                                            <div>2.980,00 €</div>
+
+                                                        </div>
                                                     </div>
-                                                </td>
-                                                <td data-th="Subtotal" class="text-center">1.99</td>
-                                                <td class="actions" data-th="">
-                                                    <button class="" type="button">
-                                                        <i class="material-icons">
-                                                            delete_forever
-                                                        </i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div id="tab2">
-                                    <h2>Heading 2</h2>
-                                    <p>Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates
-                                        deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit
-                                        voluptas iure repellendus unde eveniet accusamus ex.</p>
-                                </div>
-                                <div id="tab3">
-                                    <h2>Heading 3</h2>
-                                    <p>Atque ratione soluta laboriosam illo inventore amet ipsum aliquam assumenda harum provident
-                                        nam accusantium neque debitis obcaecati maxime officia saepe ad ducimus in quam libero
-                                        vero quasi. Saepe sit nisi?</p>
-                                </div>
-                                <div id="tab4">
-                                    <h2>Heading 4</h2>
-                                    <p>Quidem perferendis id sapiente cumque ullam repellendus dolorum odit rerum quibusdam
-                                        tempora voluptatibus ipsum. Maiores laborum velit aperiam dicta quisquam assumenda
-                                        at esse exercitationem culpa sequi porro minus ipsa aut.</p>
-                                </div>
-                            </section>
+                                                    <div class="card__item-call card__call-total">
+                                                        <div class="wrap_block_pr">
+
+                                                            <div class="total_property">11.920,00 €</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__item-call card__call-btn">
+                                                        <button class="" type="button">
+                                                            <i class="material-icons">
+                                                                delete_forever
+                                                            </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="card__item">
+                                                    <div class="card__item-call card__call-check">
+
+
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                    </div>
+                                                    <div class="card__item-call card__call-img">
+                                                        <img src="images/card_el.png" class="img-responsive" />
+                                                    </div>
+                                                    <div class="card__item-call card__call-title">
+                                                        <h4 class="nomargin name_product_tbl">TeleCentric 70 K
+                                                        </h4>
+                                                        <span class="artcl_block">
+                                                            ArtNr.: 6921548000055
+                                                        </span>
+                                                    </div>
+                                                    <div class="card__item-call card__call-count">
+                                                        <div class="number">
+                                                            <span class="minus">-</span>
+                                                            <input type="text" value="1" class="number_change" />
+                                                            <span class="plus">+</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__item-call card__call-price">
+                                                        <div class="wrap_block_pr">
+                                                            <div>2.980,00 €</div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__item-call card__call-total">
+                                                        <div class="wrap_block_pr">
+
+                                                            <div class="total_property">11.920,00 €</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__item-call card__call-btn">
+                                                        <button class="" type="button">
+                                                            <i class="material-icons">
+                                                                delete_forever
+                                                            </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="card__item">
+                                                    <div class="card__item-call card__call-check">
+
+
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                    </div>
+                                                    <div class="card__item-call card__call-img">
+                                                        <img src="images/card_el.png" class="img-responsive" />
+                                                    </div>
+                                                    <div class="card__item-call card__call-title">
+                                                        <h4 class="nomargin name_product_tbl">TeleCentric 70 K
+                                                        </h4>
+                                                        <span class="artcl_block">
+                                                            ArtNr.: 6921548000055
+                                                        </span>
+                                                    </div>
+                                                    <div class="card__item-call card__call-count">
+                                                        <div class="number">
+                                                            <span class="minus">-</span>
+                                                            <input type="text" value="1" class="number_change" />
+                                                            <span class="plus">+</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__item-call card__call-price">
+                                                        <div class="wrap_block_pr">
+                                                            <div>2.980,00 €</div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__item-call card__call-total">
+                                                        <div class="wrap_block_pr">
+
+                                                            <div class="total_property">11.920,00 €</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__item-call card__call-btn">
+                                                        <button class="" type="button">
+                                                            <i class="material-icons">
+                                                                delete_forever
+                                                            </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-lg-12">
+                                                <div class="col-lg-6">
+                                                    <div class="left_blok_cart">
+                                                        <div class="block_act">
+                                                            <input type="checkbox">
+                                                            <div class="text_cart_btn">
+                                                                alle
+                                                            </div>
+                                                            <div class="remove_block">
+                                                                <i class="material-icons">
+                                                                    delete_forever
+                                                                </i>
+                                                            </div>
+                                                            <div class="autorenew">
+                                                                <i class="material-icons">
+                                                                    autorenew
+                                                                </i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="buy_block">
+                                                            <div class="txt_add">
+
+                                                                <input type="text" placeholder="Gutschein-Nr. eingeben">
+                                                            </div>
+                                                            <div class="button_item">
+                                                                <button>
+                                                                    einlösen
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button_keep_going">
+                                                            <button>
+                                                                <i class="material-icons">
+                                                                    arrow_back
+                                                                </i>
+                                                                Weiter Einkaufen
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="right_block_cart">
+                                                        dasdasd
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab2">
+                                        <h2>Heading 2</h2>
+                                        <p>Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates
+                                            deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores
+                                            impedit voluptas iure repellendus unde eveniet accusamus ex.</p>
+                                    </div>
+                                    <div id="tab3">
+                                        <h2>Heading 3</h2>
+                                        <p>Atque ratione soluta laboriosam illo inventore amet ipsum aliquam assumenda harum
+                                            provident nam accusantium neque debitis obcaecati maxime officia saepe ad ducimus
+                                            in quam libero vero quasi. Saepe sit nisi?</p>
+                                    </div>
+                                    <div id="tab4">
+                                        <h2>Heading 4</h2>
+                                        <p>Quidem perferendis id sapiente cumque ullam repellendus dolorum odit rerum quibusdam
+                                            tempora voluptatibus ipsum. Maiores laborum velit aperiam dicta quisquam assumenda
+                                            at esse exercitationem culpa sequi porro minus ipsa aut.</p>
+                                    </div>
+                                </section>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="bottom-news">
-        <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="bottom-news-item">

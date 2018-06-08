@@ -7,16 +7,20 @@ tbody {
 td {
   padding: 0;
 }
-/* tr {
-  font-size: 14px;
-  color: #000;
-  font-weight: 700;
-} */
-.product_pro {
-  padding: 0px;
-}
-.table > thead > tr > th {
-  border: none;
+
+#cart {
+  tr {
+    border-bottom: 10px solid #fff;
+    border-top: 10px solid transparent;
+    th {
+      color: #000;
+      font-weight: bold;
+    }
+    td {
+      padding: 10px;
+      vertical-align: middle;
+    }
+  }
 }
 
 .actions {
@@ -25,10 +29,21 @@ td {
   font-size: 0;
   cursor: pointer;
 }
-
+.name_product_tbl {
+  font-size: 18px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    width: 32px;
+    height: 4px;
+    background: #ef8900;
+  }
+}
 .actions button {
   background-color: #e6e6e6;
-  height: 100px;
+  height: 112px;
   width: 27px;
   border: none;
   margin: auto;
@@ -37,5 +52,163 @@ td {
   i {
     font-size: 20px;
     color: #000;
+  }
+}
+
+.card__list {
+  position: static;
+}
+.card__list-header {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__list-header-call {
+  font-weight: 700;
+  padding: 5px 0;
+}
+.card__item {
+  text-align: center;
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 10px;
+  background: #f3f3f3;
+  justify-content: space-between;
+}
+.card__item-call {
+  text-align: left;
+}
+/* тут ширини rолонки */
+.card__call-check {
+  flex: 55px 0 0;
+  text-align: center;
+}
+.card__call-img {
+  flex: 100px 0 0;
+}
+.card__call-title {
+  flex: 20% 0 0;
+}
+.names_top {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+.wrap_block_pr {
+  color: #000;
+}
+.total_property {
+  text-align: right;
+}
+.card__call-count {
+  flex: 15% 0 0;
+}
+.card__call-price {
+  flex: 15% 0 0;
+}
+.card__call-total {
+  flex: 15% 0 0;
+}
+.card__call-btn {
+  flex: 30px 0 0;
+  text-align: center;
+  button {
+    padding: 0;
+    border: none;
+    height: 110px;
+    transform: translate(10px);
+    display: flex;
+    align-items: center;
+    i {
+      color: #000;
+      font-size: 20px;
+    }
+  }
+}
+
+.block_act {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.text_cart_btn {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  background: #f3f3f3;
+  font-weight: 700;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-right: 3px;
+}
+.remove_block {
+  display: flex;
+  background: #f3f3f3;
+  margin-right: 3px;
+  i {
+    font-size: 20px;
+    padding: 2px;
+    color: #000;
+  }
+}
+.autorenew {
+  display: flex;
+  align-items: center;
+  i {
+    background: #f3f3f3;
+    font-size: 20px;
+    padding: 2px;
+    color: #000;
+  }
+}
+.buy_block {
+  display: flex;
+  line-height: 40px;
+}
+.txt_add {
+  border: 1px solid #757575;
+  border-right: none;
+  display: flex;
+  input {
+    padding-right: 25px;
+    padding-left: 10px;
+    /* height: 40px; */
+    font-weight: 400;
+    border: none;
+    line-height: 0;
+  }
+}
+.button_item {
+  button {
+    background: #000;
+    border: none;
+    border: 1px solid #757575;
+    color: #757575;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.button_keep_going {
+  max-width: 180px;
+  line-height: 40px;
+  border: 1px solid #757575;
+  button {
+    background: transparent;
+    padding: 0;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    i {
+      padding-left: 7px;
+    }
   }
 }
