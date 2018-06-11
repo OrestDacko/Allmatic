@@ -32,6 +32,10 @@ td {
 .name_product_tbl {
   font-size: 18px;
   position: relative;
+  padding-bottom: 8px;
+  padding-top: 0;
+  margin-top: 0;
+  line-height: normal;
   &:before {
     content: "";
     position: absolute;
@@ -77,8 +81,59 @@ td {
   background: #f3f3f3;
   justify-content: space-between;
 }
+.flex-align-top {
+  align-self: flex-start;
+}
 .card__item-call {
   text-align: left;
+  .checkmark-wrapper {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #757575;
+    display: block;
+    margin: auto;
+    & * {
+      cursor: pointer;
+    }
+    input {
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: 9;
+      width: 100%;
+      margin: auto;
+      height: 100%;
+      position: absolute;
+      &:checked + label {
+        background-color: white;
+
+        &:after {
+          border-color: black;
+        }
+      }
+    }
+    label {
+      height: 100%;
+      display: block;
+      &:after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 0;
+        height: 0;
+        padding: 4px 2px;
+        border-width: 0 1px 1px 0;
+        border-color: transparent;
+        border-style: solid;
+        transform: rotate(45deg);
+      }
+    }
+  }
 }
 /* тут ширини rолонки */
 .card__call-check {
@@ -86,7 +141,12 @@ td {
   text-align: center;
 }
 .card__call-img {
+  overflow: hidden;
+  max-height: 110px;
   flex: 100px 0 0;
+}
+.card__call-img ~ *:not(.card__call-btn) {
+  padding-top: 20px;
 }
 .card__call-title {
   flex: 20% 0 0;
@@ -118,7 +178,10 @@ td {
     padding: 0;
     border: none;
     height: 110px;
-    transform: translate(10px);
+    padding: 0 5px;
+    display: inherit;
+    margin: auto !important;
+    // transform: translate(10px);
     display: flex;
     align-items: center;
     i {
@@ -132,6 +195,10 @@ td {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  padding-left: 20px;
+  input {
+    margin-right: 11px;
+  }
 }
 .text_cart_btn {
   display: flex;
@@ -192,6 +259,9 @@ td {
     font-size: 16px;
     padding-left: 16px;
     padding-right: 16px;
+    &:hover {
+      color: #fff;
+    }
   }
 }
 .button_keep_going {
@@ -209,6 +279,7 @@ td {
     align-items: center;
     i {
       padding-left: 7px;
+      font-size: 20px;
     }
   }
 }

@@ -1,0 +1,47 @@
+.right_block_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.al_order_el {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+  border-bottom: 1px solid #dcdcdc;
+  line-height: 33px;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.al_order_el_text {
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
+}
+.all_total {
+  .al_order_el_text {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+  }
+}
+
+.right_send {
+  float: right;
+}
+.send_order {
+  width: 274px;
+  background: #000;
+  border: none;
+  vertical-align: middle;
+  text-transform: uppercase;
+  height: 40px;
+  font-size: 16px;
+  &:hover {
+    color: #fff;
+  }
+  i {
+    vertical-align: middle;
+    font-size: 20px;
+  }
+}

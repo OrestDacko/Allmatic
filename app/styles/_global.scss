@@ -31,3 +31,8 @@ a {
 .category-menu-nav-tree .category-menu-nav-li:last-child {
   margin-bottom: 0px;
 }
+.material-icons {
+  &:hover {
+    cursor: pointer;
+  }
+}

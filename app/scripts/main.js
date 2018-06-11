@@ -17,6 +17,25 @@ $(document).ready(function() {
 
   var selector = ".top_name";
 
+  $(".tabgroup > div").hide();
+  $(".tabgroup > div:first-of-type").show();
+  $(".tabs a").click(function(e) {
+    e.preventDefault();
+    var $this = $(this),
+      tabgroup = "#" + $this.parents(".tabs").data("tabgroup"),
+      others = $this
+        .closest("li")
+        .siblings()
+        .children("a"),
+      target = $this.attr("href");
+    others.removeClass("active");
+    $this.addClass("active");
+    $(tabgroup)
+      .children("div")
+      .hide();
+    $(target).show();
+  });
+
   $(".top_name").on("click", function() {
     $(".top_name").removeClass("active");
     $(this).addClass("active");
@@ -70,25 +89,6 @@ $(document).ready(function() {
     $input.change();
     return false;
   });
-});
-
-$(".tabgroup > div").hide();
-$(".tabgroup > div:first-of-type").show();
-$(".tabs a").click(function(e) {
-  e.preventDefault();
-  var $this = $(this),
-    tabgroup = "#" + $this.parents(".tabs").data("tabgroup"),
-    others = $this
-      .closest("li")
-      .siblings()
-      .children("a"),
-    target = $this.attr("href");
-  others.removeClass("active");
-  $this.addClass("active");
-  $(tabgroup)
-    .children("div")
-    .hide();
-  $(target).show();
 });
 
 $("#q")
