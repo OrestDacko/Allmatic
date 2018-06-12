@@ -16,6 +16,9 @@
     justify-content: stretch;
     align-items: flex-start;
     &-side {
+      &_left {
+        display: block;
+      }
       position: static;
       .container-right {
         padding: 0 60px;
