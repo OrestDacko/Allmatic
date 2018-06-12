@@ -1,63 +1,94 @@
-.footer { padding: 0 !important; margin-top: 20px; }
-
-.footer #menu-.footer li a, .footer #menu-footer-en li a, .footer #menu-legals li a { color: #757575; }
-
-.footer #menu-.footer li a:hover, .footer #menu-footer-en li a:hover, .footer #menu-legals li a:hover { color: #ef8900; }
-
-.footer #map { height: 36rem; margin-left: -15px; margin-right: -15px; }
-
-.footer #map iframe { width: 100%; height: 100%; }
-
-.footer .btn-default { border: none; color: #ef8900; width: 100% !important; }
-
-.footer .btn-default:hover { color: #757575; background-color: #fff; }
-
-.footer .legals { line-height: 60px; color: #757575; font-size: 12px; }
-
-.footer .legals ul { margin-bottom: 0; }
-
-.footer .newsletterContainer input { width: 89%; }
-
-.footer .newsletterContainer h2 { font-size: 34px; color: #fff; }
-
-.footer .newsletterContainer .signUp, .footer .newsletterContainer .signUp:focus { border-bottom: solid 1px #fff; background: #ef8900; color: white; }
-
-.footer .newsletterContainer .signUp::-webkit-input-placeholder, .footer .newsletterContainer .signUp:focus::-webkit-input-placeholder { color: white; }
-
-.footer .newsletterContainer .signUp::-moz-placeholder, .footer .newsletterContainer .signUp:focus::-moz-placeholder { color: white; }
-
-.footer .newsletterContainer .signUp::-moz-placeholder, .footer .newsletterContainer .signUp:focus::-moz-placeholder { color: white; }
-
-.footer .newsletterContainer .signUp::-ms-input-placeholder, .footer .newsletterContainer .signUp:focus::-ms-input-placeholder { color: white; }
-
-.footer .infos p { font-size: 12px; }
-
-.footer .youtubeLink { height: 55px; display: block; }
-
-.footer .youtubeLink img { height: 100%; margin-left: -15px; }
-
-
-
-
-.top-button { 
-    position: fixed; 
-    padding: 10px;
-    border-radius: 50%;
-    width: 42px;
-    height: 42px;
-    box-sizing: border-box;
-    overflow: hidden;
-    right: 5%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 10%; 
-    z-index: 9;
-    font-size: 10px;
-    background-color: #757575;
-    color: #fff ; 
-    &:hover, &:focus, &:active, &:visited { 
-        color: #fff; 
-        text-decoration: none;
+.footer {
+  padding: 0 !important;
+  margin-top: 20px;
+  #menu-.footer li a,
+  #menu-footer-en li a,
+  #menu-legals li a {
+    color: #757575;
+  }
+  #menu-.footer li a:hover,
+  #menu-footer-en li a:hover,
+  #menu-legals li a:hover {
+    color: #ef8900;
+  }
+  #map {
+    height: 36rem;
+    margin-left: -15px;
+    margin-right: -15px;
+    iframe {
+      width: 100%;
+      height: 100%;
     }
+  }
+  .btn-default {
+    border: none;
+    color: #ef8900;
+    width: 100% !important;
+  }
+  .btn-default:hover {
+    color: #757575;
+    background-color: #fff;
+  }
+  .legals {
+    line-height: 60px;
+    color: #757575;
+    font-size: 12px;
+    ul {
+      margin-bottom: 0;
+    }
+  }
+  .newsletterContainer {
+    input {
+      width: 89%;
+    }
+
+    h2 {
+      font-size: 34px;
+      color: #fff;
+    }
+
+    .signUp,
+    .signUp:focus {
+      border-bottom: solid 1px #fff;
+      background: #ef8900;
+      color: white;
+    }
+
+    .signUp::-webkit-input-placeholder,
+    .signUp:focus::-webkit-input-placeholder {
+      color: white;
+    }
+
+    .signUp::-moz-placeholder,
+    .signUp:focus::-moz-placeholder {
+      color: white;
+    }
+
+    .signUp::-moz-placeholder,
+    .signUp:focus::-moz-placeholder {
+      color: white;
+    }
+
+    .signUp::-ms-input-placeholder,
+    .signUp:focus::-ms-input-placeholder {
+      color: white;
+    }
+  }
+  .infos p {
+    font-size: 12px;
+  }
+  .youtubeLink {
+    height: 55px;
+    display: block;
+    img {
+      height: 100%;
+      margin-left: -15px;
+    }
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 576px) {
+  }
 }

@@ -2,16 +2,12 @@
   background: url(../images/img_bt.png);
   height: 570px;
   margin-bottom: 70px;
-  // background-size: calc(100% - 30px);
   background-repeat: no-repeat;
-  //   style="background: url(../images/img_bt.png) center no-repeat; background-size: cover;
-
   .wrapper_finder {
     margin-left: 60px;
     max-width: 561px;
     margin-right: 0;
     padding-top: 50px;
-
     .name_productfinder {
       font-size: 34px;
       line-height: 38px;
@@ -51,9 +47,14 @@
       color: #ef8900;
       margin-right: 15px;
     }
-
     .btn_productfinder:last-child {
       margin-right: 0;
     }
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 576px) {
   }
 }

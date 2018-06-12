@@ -2,7 +2,6 @@
   padding: 30px 0 0 0;
   margin-bottom: 124px;
 }
-
 .box_product_general {
   background: #f3f3f3;
   width: 100%;
@@ -96,7 +95,6 @@
   overflow: hidden;
   text-transform: uppercase;
   line-height: 1;
-  //margin-top: 112px;
   margin: 0 0 17px 0;
 }
 .bottom_name_item {
@@ -171,4 +169,11 @@
     margin-right: 13px;
     color: #ef8900;
   }
+}
+
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
 }

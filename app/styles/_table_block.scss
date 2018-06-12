@@ -1,3 +1,68 @@
+.card {
+  &__list {
+    position: static;
+    &-header {
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-call {
+        font-weight: 700;
+        padding: 5px 0;
+      }
+    }
+  }
+  &__item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background: #f3f3f3;
+    justify-content: space-between;
+    &-call {
+      text-align: left;
+    }
+  }
+  &__call {
+    &-check {
+      flex: 55px 0 0;
+      text-align: center;
+    }
+    &-img {
+      overflow: hidden;
+      max-height: 110px;
+      flex: 100px 0 0;
+    }
+    &-img ~ *:not(.card__call-btn) {
+      padding-top: 20px;
+    }
+    &-title {
+      flex: 20% 0 0;
+    }
+    &-count {
+      flex: 15% 0 0;
+    }
+    &-price {
+      flex: 15% 0 0;
+    }
+    &-total {
+      flex: 15% 0 0;
+    }
+    &-btn {
+      flex: 30px 0 0;
+      text-align: center;
+    }
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 576px) {
+  }
+}
+
+// =================================================
+
 tbody {
   background: #f3f3f3;
   h4 {
@@ -6,6 +71,69 @@ tbody {
 }
 td {
   padding: 0;
+}
+.card_call-btn button {
+  padding: 0;
+  border: none;
+  height: 110px;
+  padding: 0 5px;
+  display: inherit;
+  margin: auto !important;
+  display: flex;
+  align-items: center;
+  i {
+    color: #000;
+    font-size: 20px;
+  }
+}
+
+.checkmark-wrapper {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #757575;
+  display: block;
+  margin: auto;
+  & * {
+    cursor: pointer;
+  }
+  input {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 9;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    &:checked + label {
+      background-color: white;
+
+      &:after {
+        border-color: black;
+      }
+    }
+  }
+  label {
+    height: 100%;
+    display: block;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 0;
+      height: 0;
+      padding: 4px 2px;
+      border-width: 0 1px 1px 0;
+      border-color: transparent;
+      border-style: solid;
+      transform: rotate(45deg);
+    }
+  }
 }
 
 #cart {
@@ -59,97 +187,8 @@ td {
   }
 }
 
-.card__list {
-  position: static;
-}
-.card__list-header {
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.card__list-header-call {
-  font-weight: 700;
-  padding: 5px 0;
-}
-.card__item {
-  text-align: center;
-  display: flex;
-
-  align-items: center;
-  margin-bottom: 10px;
-  background: #f3f3f3;
-  justify-content: space-between;
-}
 .flex-align-top {
   align-self: flex-start;
-}
-.card__item-call {
-  text-align: left;
-  .checkmark-wrapper {
-    position: relative;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #757575;
-    display: block;
-    margin: auto;
-    & * {
-      cursor: pointer;
-    }
-    input {
-      top: 0;
-      left: 0;
-      opacity: 0;
-      z-index: 9;
-      width: 100%;
-      margin: auto;
-      height: 100%;
-      position: absolute;
-      &:checked + label {
-        background-color: white;
-
-        &:after {
-          border-color: black;
-        }
-      }
-    }
-    label {
-      height: 100%;
-      display: block;
-      &:after {
-        content: "";
-        position: absolute;
-        top: -2px;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        width: 0;
-        height: 0;
-        padding: 4px 2px;
-        border-width: 0 1px 1px 0;
-        border-color: transparent;
-        border-style: solid;
-        transform: rotate(45deg);
-      }
-    }
-  }
-}
-/* тут ширини rолонки */
-.card__call-check {
-  flex: 55px 0 0;
-  text-align: center;
-}
-.card__call-img {
-  overflow: hidden;
-  max-height: 110px;
-  flex: 100px 0 0;
-}
-.card__call-img ~ *:not(.card__call-btn) {
-  padding-top: 20px;
-}
-.card__call-title {
-  flex: 20% 0 0;
 }
 .names_top {
   font-size: 14px;
@@ -162,35 +201,6 @@ td {
 .total_property {
   text-align: right;
 }
-.card__call-count {
-  flex: 15% 0 0;
-}
-.card__call-price {
-  flex: 15% 0 0;
-}
-.card__call-total {
-  flex: 15% 0 0;
-}
-.card__call-btn {
-  flex: 30px 0 0;
-  text-align: center;
-  button {
-    padding: 0;
-    border: none;
-    height: 110px;
-    padding: 0 5px;
-    display: inherit;
-    margin: auto !important;
-    // transform: translate(10px);
-    display: flex;
-    align-items: center;
-    i {
-      color: #000;
-      font-size: 20px;
-    }
-  }
-}
-
 .block_act {
   display: flex;
   align-items: center;
@@ -282,4 +292,10 @@ td {
       font-size: 20px;
     }
   }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
 }
