@@ -1,5 +1,4 @@
 .primary-grid {
-  max-width: 750px;
   padding: 0 15px;
   margin: 0 auto;
   &-side {
@@ -8,6 +7,25 @@
     }
     &_right {
       position: static;
+    }
+  }
+  @media (min-width: 992px) {
+    display: flex;
+    padding: 0;
+    max-width: 750px;
+    justify-content: stretch;
+    align-items: flex-start;
+    &-side {
+      position: static;
+      .container-right {
+        padding: 0 60px;
+      }
+      &_left {
+        flex: 275px 0 0;
+      }
+      &_right {
+        flex: 1;
+      }
     }
   }
   @media (min-width: 992px) {
