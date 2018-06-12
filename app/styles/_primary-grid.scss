@@ -2,6 +2,14 @@
   max-width: 750px;
   padding: 0 15px;
   margin: 0 auto;
+  &-side {
+    &_left {
+      display: none;
+    }
+    &_right {
+      position: static;
+    }
+  }
   @media (min-width: 992px) {
     display: flex;
     padding: 0;

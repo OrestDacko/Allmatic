@@ -1,0 +1,17 @@
+.arrow_right {
+  height: 42px;
+  width: 42px;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #ef8900;
+  font-size: 16px;
+  text-align: center;
+  line-height: 42px;
+  margin-bottom: 26px;
+  &:hover {
+    background: #ef8900;
+    color: #fff;
+  }
+}
